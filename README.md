@@ -47,7 +47,8 @@ Open that URL in your browser before writing a single line of code — the Swagg
 
 > **Screenshot 1:** Take a screenshot of the Swagger UI showing the list of available endpoints.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fea626b9-d254-4cfb-954a-d59a86e8b6eb" />
+
 
 ---
 
@@ -100,7 +101,8 @@ python3 --version
 
 > **Screenshot 2:** Take a screenshot showing the version outputs of `uv` and `python3`.
 >
-> `[insert screenshot]`
+> <img width="932" height="146" alt="image" src="https://github.com/user-attachments/assets/a07da293-57bd-4da7-a3d1-4a3e33b9f2f9" />
+
 
 ---
 
@@ -159,7 +161,8 @@ uv run python -c "import requests; print('requests', requests.__version__)"
 
 > **Screenshot 3:** Take a screenshot showing the output confirming `requests` is available.
 >
-> `[insert screenshot]`
+> <img width="1736" height="113" alt="image" src="https://github.com/user-attachments/assets/d542ff32-a689-459d-89da-223b0bec9f8a" />
+
 
 ### Step 5 – Commit
 
@@ -173,11 +176,11 @@ git push -u origin main
 
 **Question 1.1:** `uv` creates a `uv.lock` file alongside `pyproject.toml`. What is the difference between the two files? Why should `uv.lock` be committed to version control?
 
-> *Your answer:*
+> pyproject.toml lists general requirements while uv.lock freezes the exact package versions so everyone's code runs identically.
 
 **Question 1.2:** `uv run` executes a command inside the project's virtual environment without you having to activate it manually. What problem does this solve compared to relying on the system-wide Python installation?
 
-> *Your answer:*
+> It keeps project packages isolated so they don't break other projects or mess up your system python.
 
 ---
 
@@ -267,7 +270,9 @@ for p in parts:
 
 > **Screenshot 4:** Take a screenshot showing the parts list printed in the Python REPL.
 >
-> `[insert screenshot]`
+> <img width="491" height="65" alt="1" src="https://github.com/user-attachments/assets/17d27b7a-42df-434c-bd3d-aab2335ff0b0" />
+> <img width="392" height="64" alt="2" src="https://github.com/user-attachments/assets/705b0886-a34c-4744-836f-e04aa48d9a09" />
+
 
 Exit with `exit()`.
 
@@ -283,11 +288,11 @@ git push
 
 **Question 2.1:** `r.raise_for_status()` raises an exception if the server returned a 4xx or 5xx status code. What would happen if this call were omitted and the server returned `409 Conflict`?
 
-> *Your answer:*
+> The program would completely ignore the failure and try to process empty or broken data which causes a silent crash later
 
 **Question 2.2:** `BASE_URL` and `HEADERS` are module-level variables set at runtime by the connection dialog. Why is this approach preferable to reading them from a configuration file on disk?
 
-> *Your answer:*
+> It lets you dynamically change server connections or keys on the fly directly inside the app without messing with files
 
 ---
 
@@ -374,7 +379,8 @@ root.mainloop()
 > Now add `top.grab_set()` after the `Toplevel` creation and repeat.
 > Describe the difference.
 
-> *Your answer:*
+> Without grab_set(), you can still click and type inside the main window while the dialog stays open in front,, with top.grab_set() added,
+> the main window becomes completely frozen and unclickable until you close the dialog first.
 
 ### Step 3 – Commit
 
