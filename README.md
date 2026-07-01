@@ -712,11 +712,14 @@ The connection dialog should appear. Enter the base URL and API key provided by 
 
 > **Screenshot 5:** Take a screenshot of the connection dialog.
 >
-> `[insert screenshot]`
+> <img width="622" height="304" alt="image" src="https://github.com/user-attachments/assets/a42d9370-fd5b-4abf-8788-785c2b4ce152" />
+
+
 
 > **Screenshot 6:** Take a screenshot of the main window showing the Parts tab populated with data from the live server.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcb1d36e-015c-44de-8728-5b08158e9c14" />
+
 
 ### Step 4 – Commit
 
@@ -730,11 +733,12 @@ git push
 
 **Question 4.1:** The `_refresh_all()` method is called in `__init__` and makes three HTTP requests before `mainloop()` starts. In what scenario could this block the UI from appearing? How would you fix it?
 
-> *Your answer:*
+> The UI will freeze or fail to pop up if the server takes too long to respond or is completely offline,
+> which you can fix by running those network requests on a separate background thread.
 
 **Question 4.2:** When `api.post_produktion()` raises an exception (e.g. `409 Conflict` due to insufficient parts), `messagebox.showerror` displays the error to the user. Look at the `requests` library documentation: what type of exception does `raise_for_status()` raise, and what attribute contains the server's response body?
 
-> *Your answer:*
+> It raises an HTTPError exception, and the server's response body is stored inside the .text attribute.
 
 ---
 
