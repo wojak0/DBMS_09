@@ -858,7 +858,8 @@ fabrik-frontend
 
 > **Screenshot 12:** Terminal showing `ls dist/` with both distribution files.
 >
-> `[insert screenshot]`
+> <img width="998" height="148" alt="image" src="https://github.com/user-attachments/assets/08f19972-9483-4e00-a0a2-5b7df25eda51" />
+
 
 ### Step 2 – Commit
 
@@ -874,11 +875,12 @@ git push
 
 **Question 6.1:** A `.whl` file still requires Python to be installed on the target machine. What problem does PyInstaller solve that `uv build` does not?
 
-> *Your answer:*
+> PyInstaller packages the Python interpreter and all dependencies directly into a single standalone executable file,
+> meaning the target machine does not need Python installed at all
 
 **Question 6.2:** `[project.scripts]` defines `fabrik-frontend = "fabrik_frontend.__main__:main"`. Explain what happens when a user runs the command `fabrik-frontend` in their terminal after installing the wheel.
 
-> *Your answer:*
+> The terminal looks up that alias and instantly executes the main function inside your __main__.py file to launch the application.
 
 ---
 
