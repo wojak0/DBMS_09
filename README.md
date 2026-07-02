@@ -755,7 +755,9 @@ In the **Parts** tab, use the *Deliver parts* form:
 
 > **Screenshot 7:** Parts tab after delivering, showing updated stock values.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="Screenshot (776)" src="https://github.com/user-attachments/assets/49c06b9f-c1da-49e4-b9cb-4538f8056ea6" />
+
+
 
 ### Step 2 – Record a Production Run
 
@@ -767,7 +769,8 @@ In the **Products** tab, use the *Record production run* form:
 
 > **Screenshot 8:** Parts tab after production, showing reduced stock.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/399fce8f-ed3a-4d8d-bfb7-d765b83e4db8" />
+
 
 ### Step 3 – Check the Bill of Materials
 
@@ -775,7 +778,8 @@ Switch to the **Bill of Materials** tab. Enter Product ID `2` (Racing bike frame
 
 > **Screenshot 9:** Bill of Materials tab showing all five parts for the racing bike frame.
 >
-> `[insert screenshot]`
+> <img width="1858" height="373" alt="image" src="https://github.com/user-attachments/assets/2a727a7d-04ab-4886-80fc-1f2dcfcf0565" />
+
 
 ### Step 4 – Check Out a Finished Product
 
@@ -785,7 +789,8 @@ In the **Products** tab, use the *Check out from warehouse* form:
 
 > **Screenshot 10:** Products tab after checkout, showing `Total out` incremented by 1.
 >
-> `[insert screenshot]`
+> <img width="1887" height="243" alt="image" src="https://github.com/user-attachments/assets/398b963a-633e-445a-849e-884a176c47e0" />
+
 
 ### Step 5 – Trigger a Reorder Warning
 
@@ -793,7 +798,8 @@ Deliver only 1 steel tube (Part ID `1`) to bring stock very low, then produce 1 
 
 > **Screenshot 11:** Reorder Warnings tab showing at least one warning entry.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/179fe2f7-3575-4d7c-a579-a0cb1e470891" />
+
 
 ### Step 6 – Stocktake Correction
 
