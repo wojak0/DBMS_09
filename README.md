@@ -931,7 +931,11 @@ On Windows: `fabrik-frontend.exe` instead.
 
 > **Screenshot 13:** The application running from the PyInstaller-built executable.
 >
-> `[insert screenshot]`
+> <img width="1920" height="1080" alt="Screenshot (797)" src="https://github.com/user-attachments/assets/0416cef0-65de-4ba2-bff0-e988b266786d" />
+>
+> <img width="1920" height="1080" alt="Screenshot (800)" src="https://github.com/user-attachments/assets/8f1a74fb-2699-414c-ac4b-6e101ec45f94" />
+
+
 
 > **Note:** PyInstaller builds are platform-specific. A build on Linux produces a Linux binary only. To distribute for all three platforms you need to build once on each operating system (or use a CI/CD pipeline).
 
@@ -1015,8 +1019,22 @@ Result: `fabrik-frontend-setup-0.1.0.exe` — a standard Windows installation wi
 
 > **Screenshot 15 (Windows only):** The Inno Setup installer wizard running.
 >
-> `[insert screenshot]`
+> <img width="1920" height="924" alt="image" src="https://github.com/user-attachments/assets/ed05e497-bb09-4a20-bd96-79a36b05816b" />
 
+><img width="1920" height="1080" alt="Screenshot (801)" src="https://github.com/user-attachments/assets/8baa264c-6497-449e-a170-2401d4c529a4" />
+
+><img width="1920" height="1080" alt="Screenshot (802)" src="https://github.com/user-attachments/assets/b52548b9-b6ea-4adb-b774-74f12fa60d3d" />
+
+><img width="1920" height="1080" alt="Screenshot (803)" src="https://github.com/user-attachments/assets/856cd952-9a43-4184-96c0-b62ae89c1d2a" />
+
+><img width="1920" height="1080" alt="Screenshot (804)" src="https://github.com/user-attachments/assets/7ae123b2-9911-48bb-98b7-1934625873e1" />
+
+><img width="1920" height="1080" alt="Screenshot (805)" src="https://github.com/user-attachments/assets/a2518830-e6c5-4b26-8a3c-a6e4a3c9a48a" />
+
+>
+>
+>
+>
 ---
 
 ### macOS – .dmg Image
