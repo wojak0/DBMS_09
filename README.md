@@ -1080,11 +1080,12 @@ git push
 
 **Question 8.1:** PyInstaller bundles a complete Python interpreter into `_internal/`. What is the typical size of a PyInstaller `--onedir` output compared to a minimal Python installation, and why is `--onedir` generally preferred over `--onefile` for desktop applications?
 
-> *Your answer:*
+> t is usually 50-100MB, which is similar to a minimal Python install. --onedir is preferred because it launches much faster
+> since it doesn't have to extract itself to a temporary folder every single time we open it.
 
 **Question 8.2:** A `.deb` package installed via `dpkg -i` does not appear in the system package manager's update mechanism. Which tool and repository format would you use to distribute updates automatically to Debian/Ubuntu users?
 
-> *Your answer:*
+> We would host an APT repository using a tool like reprepro or aptly.
 
 ---
 
@@ -1093,22 +1094,23 @@ git push
 **Question A – Separation of Concerns:**  
 `api.py` contains all HTTP logic; `ui.py` contains all widget code; `__main__.py` wires them together. Name one concrete benefit this separation provides when you want to write automated tests for the API client.
 
-> *Your answer:*
+> We can test the HTTP requests directly without ever launching the graphical user interface.
 
 **Question B – Event-Driven vs Sequential:**  
 A fellow student proposes using a `while True` loop in the main thread to poll the API every 5 seconds and update the display. Explain why this approach would break the tkinter application, and describe the correct alternative.
 
-> *Your answer:*
+> A continuous loop would completely freeze the screen so we have to use the built-in after method to schedule updates instead.
 
 **Question C – API Key in the Dialog:**  
 The connection dialog collects the API key at runtime and stores it in `api.HEADERS` for the session only. It is never written to disk. What are the security advantages of this approach compared to storing the key in a configuration file in the user's home directory?
 
-> *Your answer:*
+> It prevents malicious software from finding and stealing the key since it disappears the second we close the app
 
 **Question D – The Full Stack:**  
 You have now touched every layer of the system: PostgreSQL database → Docker Compose deployment → FastAPI REST layer → tkinter desktop client → native installer. Describe in one sentence the role of each layer, and explain which layer a new employee would need to understand to add a sixth part to the bill of materials without changing any other layer.
 
-> *Your answer:*
+> Postgres stores data while Docker hosts everything and FastAPI serves it to the Tkinter screen
+> which the installer packages up, and we would only need to touch the Postgres database to add a new part
 
 ---
 
