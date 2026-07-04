@@ -1031,7 +1031,8 @@ Result: `fabrik-frontend-setup-0.1.0.exe` — a standard Windows installation wi
 
 ><img width="1920" height="1080" alt="Screenshot (805)" src="https://github.com/user-attachments/assets/a2518830-e6c5-4b26-8a3c-a6e4a3c9a48a" />
 
->
+><img width="591" height="326" alt="Capture" src="https://github.com/user-attachments/assets/0c46c46b-5165-499b-977e-0dc56feec1e3" />
+
 >
 >
 >
