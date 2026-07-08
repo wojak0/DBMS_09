@@ -47,7 +47,7 @@ Open that URL in your browser before writing a single line of code — the Swagg
 
 > **Screenshot 1:** Take a screenshot of the Swagger UI showing the list of available endpoints.
 >
-> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fea626b9-d254-4cfb-954a-d59a86e8b6eb" />
+> <img width="808" height="418" alt="image" src="https://github.com/user-attachments/assets/f5e05d52-9e67-40ed-9e38-9151e8d2a5e0" />
 
 
 ---
